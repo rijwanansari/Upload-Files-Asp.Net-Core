@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h4 >Rijsat.com | Upload Single or Multiple files</h4>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<form enctype="multipart/form-data" method="post">
+    <div class="form-group">
+        <label class="file">
+            <input type="file" asp-for="fileUpload.FormFiles" multiple aria-label="File browser example">
+            <span class="file-custom"></span>
+        </label>
+        <input asp-page-handler="Upload" class="btn btn-primary" type="submit" value="Upload">
+    </div>   
+
+   
+    @{
+        if (ViewData["SuccessMessage"] != null)
+        {
+        <span class="badge badge-success"> @ViewData["SuccessMessage"]</span> 
+        }
+    }
+</form>
