@@ -1,4 +1,4 @@
-# Upload-Files-Asp.Net-Core
+# UUpload Single or Multiple Files in Asp.Net Core Razor Pages
  Upload Single or Multiple Files in Asp.Net Core Razor Pages
  https://rijsat.com/2021/04/27/upload-single-or-multiple-files-in-asp-net-core-razor-pages-with-insights/
 <br> Check this site for step by step details <br>
